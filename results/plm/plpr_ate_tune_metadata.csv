@@ -1,0 +1,2 @@
+DoubleML Version,Script,Date,Total Runtime (minutes),Python Version,Config File
+0.11.2.dev96,PLPRATETuningCoverageSimulation,2026-01-16 09:42,123.22425887982051,3.12.9,scripts/plm/plpr_ate_tune_config.yml
