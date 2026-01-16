@@ -9,7 +9,7 @@ simulation_parameters:
 dgp_parameters:
   theta: [0.5] # Treatment effect
   dim_x: [10] # Number of covariates
-  num_id: [250] # number of units
+  num_id: [1000] # number of units
   num_t: [10] # number of time periods
   DGP: ["dgp1", "dgp2", "dgp3"] # Data generating processes
 

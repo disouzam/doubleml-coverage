@@ -25,7 +25,7 @@ init_notebook_mode(all_interactive=True)
 
 ## Coverage
 
-The simulations are based on the  the [make_plpr_CP2025](https://docs.doubleml.org/stable/api/datasets.html#dataset-generators)-DGP with $250$ units and $10$ time periods. The following DGPs are considered:
+The simulations are based on the  the [make_plpr_CP2025](https://docs.doubleml.org/stable/api/datasets.html#dataset-generators)-DGP with $1000$ units and $10$ time periods. The following DGPs are considered:
 
  - DGP 1: Linear in the nuisance parameters
  - DGP 2: Non-linear and smooth in the nuisance parameters
@@ -122,10 +122,9 @@ generate_and_show_styled_table(
 
 ## Tuning
 
-The simulations are based on the  the [make_plpr_CP2025](https://docs.doubleml.org/stable/api/datasets.html#dataset-generators)-DGP with $250$ units and $10$ time periods. The following DGPs are considered:
+The simulations are based on the  the [make_plpr_CP2025](https://docs.doubleml.org/stable/api/datasets.html#dataset-generators)-DGP with $1000$ units and $10$ time periods. The following DGPs are considered:
 
  - DGP 1: Linear in the nuisance parameters
- - DGP 2: Non-linear and smooth in the nuisance parameters
  - DGP 3: Non-linear and discontinuous in the nuisance parameters
 
 This is only an example as the untuned version just relies on the default configuration.

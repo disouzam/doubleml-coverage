@@ -1,7 +1,7 @@
 # Simulation parameters for PLR ATE Coverage
 
 simulation_parameters:
-  repetitions: 200
+  repetitions: 100
   max_runtime: 19800 # 5.5 hours in seconds
   random_seed: 42
   n_jobs: -2
@@ -9,9 +9,9 @@ simulation_parameters:
 dgp_parameters:
   theta: [0.5] # Treatment effect
   dim_x: [10] # Number of covariates
-  num_id: [250] # number of units
+  num_id: [1000] # number of units
   num_t: [10] # number of time periods
-  DGP: ["dgp1", "dgp2", "dgp3"] # Data generating processes
+  DGP: ["dgp1", "dgp3"] # Data generating processes
 
 # Define reusable learner configurations
 learner_definitions:
