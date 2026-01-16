@@ -98,9 +98,9 @@ class PLPRATETuningCoverageSimulation(BaseSimulation):
             for level in self.confidence_parameters["level"]:
                 level_result = dict()
                 level_result["coverage"] = self._compute_coverage(
-                    thetas=dml_model.coef,
+                    thetas=model.coef,
                     oracle_thetas=self.oracle_values["theta"],
-                    confint=dml_model.confint(level=level),
+                    confint=model.confint(level=level),
                     joint_confint=None,
                 )
 

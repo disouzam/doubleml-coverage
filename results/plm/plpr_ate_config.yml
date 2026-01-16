@@ -9,7 +9,7 @@ dgp_parameters:
   dim_x:
   - 10
   num_id:
-  - 250
+  - 1000
   num_t:
   - 10
   DGP:
