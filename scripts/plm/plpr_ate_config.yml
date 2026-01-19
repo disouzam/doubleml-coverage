@@ -1,0 +1,35 @@
+# Simulation parameters for PLR ATE Coverage
+
+simulation_parameters:
+  repetitions: 500
+  max_runtime: 19800 # 5.5 hours in seconds
+  random_seed: 42
+  n_jobs: -2
+
+dgp_parameters:
+  theta: [0.5] # Treatment effect
+  dim_x: [10] # Number of covariates
+  num_id: [1000] # number of units
+  num_t: [10] # number of time periods
+  DGP: ["dgp1", "dgp2", "dgp3"] # Data generating processes
+
+# Define reusable learner configurations
+learner_definitions:
+  lasso: &lasso
+    name: "LassoCV"
+
+  lgbm: &lgbm
+    name: "LGBM Regr."
+
+dml_parameters:
+  learners:
+    - ml_g: *lasso
+      ml_m: *lasso
+    - ml_g: *lgbm
+      ml_m: *lgbm
+
+  score: ["partialling out", "IV-type"]
+  approach: ["cre_general", "cre_normal", "fd_exact", "wg_approx"]
+
+confidence_parameters:
+  level: [0.95, 0.90] # Confidence levels
